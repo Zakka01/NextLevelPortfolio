@@ -10,7 +10,7 @@ export default function Hero() {
                     Designing clarity <span className="text-neutral-500"> in noisy spaces.</span>
                 </h1>
             </div>
-            <div className='flex flex-row justify-between w-full px-0 pt-18 h-full'>
+            <div className='flex flex-row justify-between w-full pr-8 pt-18 h-full'>
                 <button className='uppercase cursor-pointer text-[0.65rem] border text-neutral-100 border-neutral-400 px-10 rounded-full'>
                     let’s connect w/ me
                 </button>
