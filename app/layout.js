@@ -17,13 +17,13 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased">
         <LenisProvider>
-          <Noise
+          {/* <Noise
             patternSize={250}
             patternScaleX={2}
             patternScaleY={2}
             patternRefreshInterval={2}
             patternAlpha={15}
-          />
+          /> */}
           <Cursor />
           {children}
         </LenisProvider>
