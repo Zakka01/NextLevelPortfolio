@@ -40,18 +40,14 @@ export default function ScrollIndicator() {
   }, [lenis]);
 
   return (
-    <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50 pointer-events-none mix-blend-difference">
+    <div className="fixed right-0 top-1/2 -translate-y-1/2 z-0 pointer-events-none mix-blend-difference">
       <div className="flex flex-col items-center gap-2">
         {/* Scroll indicator line */}
-        <div className="w-0.5 h-64 bg-neutral-700 relative overflow-hidden">
+        <div className="w-0.5 h-screen bg-neutral-800 relative overflow-hidden">
           <div
             className="absolute top-0 left-0 w-full bg-white"
             style={{ height: `${scrollProgress}%`, transition: 'none' }}
           />
-        </div>
-        {/* Scroll percentage or indicator dot */}
-        <div className="absolute translate-y-66 text-xs text-neutral-400 font-mono tracking-wider">
-          {Math.round(scrollProgress)}%
         </div>
       </div>
     </div>
