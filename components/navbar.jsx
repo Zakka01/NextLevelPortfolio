@@ -1,9 +1,25 @@
 "use client";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Navbar() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <nav className="fixed z-100 w-full px-8 md:px-12 lg:px-5 mix-blend-difference">
+    <motion.nav 
+      className="fixed z-100 w-full px-8 md:px-12 lg:px-5 mix-blend-difference top-4"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
+      transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.4] }}
+    >
       <div className="flex items-center justify-between max-w-[1920px] mx-auto">
         <div className="cursor-pointer pt-6 text-lg md:text-xl uppercase font-medium font-mono text-white tracking-tight translate-y-[-0.15rem] w-148 border-b border-neutral-700 pl-2 pb-2">
           <Image src="/assets/ZackA.svg"  width={75} height={75} alt="logo" className="pb-1.5"/>
@@ -41,6 +57,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

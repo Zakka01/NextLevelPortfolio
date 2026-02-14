@@ -100,7 +100,7 @@ export default function Cursor() {
         willChange: "transform",
       }}
     >
-      <div className="w-4 h-4 rounded-full flex justify-center items-center border border-white">
+      <div className="w-8 h-8 rounded-full flex justify-center items-center border border-white">
         <div className="h-1 w-1 bg-white rounded-full"></div>
       </div>
     </div>
