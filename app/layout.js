@@ -3,7 +3,19 @@ import "./globals.css";
 import { LenisProvider } from "@/contexts/LenisContext";
 import Cursor from "@/components/Cursor";
 import Noise from '../components/Noise'
-import { polySans } from "./fonts";
+import {
+  polySansBulky,
+  polySansBulkyMono,
+  polySansBulkyWide,
+  polySansMedianMono,
+  polySansMedianWide,
+  polySansNeutral,
+  polySansNeutralMono,
+  polySansNeutralWide,
+  polySansSlim,
+  polySansSlimMono,
+  polySansSlimWide,
+} from "./fonts";
 
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
