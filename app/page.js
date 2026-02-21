@@ -17,16 +17,16 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-black select-none">
+    <>
       <HeroLoader onComplete={handleLoadingComplete} />
       {!isLoading && (
         <>
-          <Nav/>
+          <Nav />
           <Hero />
-          <Whoami/>
+          <Whoami />
           <ScrollIndicator />
         </>
       )}
-    </div>
+    </>
   );
 }

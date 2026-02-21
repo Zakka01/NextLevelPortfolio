@@ -68,7 +68,7 @@ export default function Navbar() {
 
     return (
         <motion.nav
-            className="fixed z-100 w-full px-8 md:px-12 lg:px-5 mix-blend-difference top-4"
+            className="fixed z-9999 w-full px-8 md:px-12 lg:px-5 mix-blend-difference top-4"
             transition={{ duration: 3, ease: [0.86, 0.0, 0.07, 1.07] }}
         >
             <motion.section 
@@ -88,7 +88,7 @@ export default function Navbar() {
                     <motion.a href="" className="text-neutral-300 w-fit hover:text-white" variants={linkVariants}>03/ Works</motion.a>
                 </motion.div>
 
-                <motion.div className="mix-blend-difference cursor-pointer text-white uppercase text-xs w-[20%] text-right" variants={letsTalkVariants}>
+                <motion.div className="mix-blend-difference- font-poly cursor-pointer text-white text-xs w-[20%] text-right" variants={letsTalkVariants}>
                     <p>Let's talk</p>
                 </motion.div>
             </motion.section>

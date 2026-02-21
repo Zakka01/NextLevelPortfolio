@@ -70,20 +70,20 @@ export default function Hero() {
     // Lines for the h1 text (preserving spans)
     const h1Lines = [
         { content: "Design", className: "" },
-        { content: <><span className='font-semibold'>That Grows </span></>, className: "" },
-        { content: <><span className="font-poly italic font-semibold"><span>Audiences</span></span></>, className: "" }
+        { content: <><span className=''>That Grows </span></>, className: "" },
+        { content: <><span className="font-poly xl:text-[11rem] leading-0.5 text-white"><span>Audiences</span></span></>, className: "" }
     ];
 
     return (
-        <section className="flex flex-col z-1999">
-            <div className="absolute inset-0 grid grid-cols-4 pointer-events-none">
+        <section className="h-screen w-full select-none bg-black flex flex-col">
+            <div className="fixed inset-0 grid grid-cols-4 pointer-events-none">
                 {Array.from({ length: 4 }).map((_, i) => (
                     <div key={i} className="border-l border-neutral-800/80"></div>
                 ))}
             </div>
 
             <div className='w-full h-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-6 relative top-12 sm:top-16 md:top-20 lg:top-24 xl:top-29'>
-                <div className='flex flex-row justify-end w-full h-full mb-4 sm:mb-6 md:mb-7'>
+                <div className='flex flex-row justify-end mb-4 sm:mb-6 md:mb-7'>
                     <motion.div
                         className='text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] lg:text-[0.52rem] text-left font-mono uppercase text-neutral-400 leading-relaxed'
                         variants={pContainerVariants}
@@ -103,7 +103,7 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-row md:flex-row items-start md:items-end justify-between max-w-[1920px] mx-auto">
                     <motion.div
-                        className="cursor-default font-medium text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[7rem] xl:text-[10rem] 2xl:text-[9rem] text-neutral-300 mix-blend-difference tracking-tight leading-[1.1] sm:leading-[1.15] md:leading-[0.85]"
+                        className="cursor-default text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] lg:text-[7rem] xl:text-[10rem] 2xl:text-[9rem] text-neutral-300 mix-blend-difference tracking-tight leading-[1.1] sm:leading-[1.15] md:leading-[0.85]"
                         variants={h1ContainerVariants}
                         initial="hidden"
                         animate="visible"
@@ -112,7 +112,7 @@ export default function Hero() {
                             <motion.span
                                 key={index}
                                 variants={lineVariants}
-                                className="block"
+                                className="block font-medium text-neutral-300" 
                             >
                                 {line.content}
                             </motion.span>
@@ -122,33 +122,26 @@ export default function Hero() {
                         variants={btnVariants}
                         initial="hidden"
                         animate="visible"
-                        className="flex flex-col justify-center items-center gap-1 mb-5 mr-25 z-9999 text-neutral-400 font-mono tracking-wider"
+                        className="flex flex-col justify-center items-center gap-1 mb-0 mr-0 z-9990 text-neutral-400 font-mono tracking-wider"
                     >
-                        <p className="text-[0.6rem]">SCROLL</p>
-
-                        <motion.div
-                            animate={{ y: [3, -2, 3] }}
-                            transition={{
-                                duration: 1.5,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                            }}
-                        >
-                            <Image
-                                src="/assets/right-arrow.png"
-                                width={10}
-                                height={10}
-                                alt=""
-                                className="opacity-50 rotate-90"
-                            />
-                        </motion.div>
+                        <p className="text-[0.7rem]">@2026</p>
                     </motion.div>
                 </div>
 
                 <GradualBlur
                     target="page"
                     position="bottom"
-                    height="7rem"
+                    height="8rem"
+                    strength={1}
+                    divCount={5}
+                    curve="bezier"
+                    exponential
+                    opacity={1}
+                />
+                <GradualBlur
+                    target="page"
+                    position="top"
+                    height="8rem"
                     strength={1}
                     divCount={5}
                     curve="bezier"

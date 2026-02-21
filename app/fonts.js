@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 export const polySans = localFont({
   src: [
     {
-      path: "./polysansitalictrial-medianitalic.otf",
+      path: "./polysansitalictrial-neutralitalic.otf",
       weight: "400",
       style: "italic",
     },

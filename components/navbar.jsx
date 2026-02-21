@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <motion.nav 
-      className="fixed z-100 w-full px-8 md:px-12 lg:px-5 mix-blend-difference top-4"
+      className="fixed z-9999 w-full px-8 md:px-12 lg:px-5 mix-blend-difference top-4"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
       transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.4] }}
