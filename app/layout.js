@@ -4,17 +4,7 @@ import { LenisProvider } from "@/contexts/LenisContext";
 import Cursor from "@/components/Cursor";
 import Noise from '../components/Noise'
 import {
-  polySansBulky,
-  polySansBulkyMono,
-  polySansBulkyWide,
-  polySansMedianMono,
-  polySansMedianWide,
-  polySansNeutral,
-  polySansNeutralMono,
-  polySansNeutralWide,
-  polySansSlim,
-  polySansSlimMono,
-  polySansSlimWide,
+  polySans
 } from "./fonts";
 
 
@@ -31,17 +21,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`
       ${geistSans.variable} 
       ${geistMono.variable} 
-      ${polySansBulky.variable} 
-      ${polySansBulkyMono.variable} 
-      ${polySansBulkyWide.variable} 
-      ${polySansMedianMono.variable} 
-      ${polySansMedianWide.variable} 
-      ${polySansNeutral.variable} 
-      ${polySansNeutralMono.variable} 
-      ${polySansNeutralWide.variable} 
-      ${polySansSlim.variable} 
-      ${polySansSlimMono.variable} 
-      ${polySansSlimWide.variable} 
+      ${polySans.variable} 
+
       bg-black`}>
       <body className="antialiased">
         <LenisProvider>
