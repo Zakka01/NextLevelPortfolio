@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Section2() {
     return (
         <section>
-            <section className="w-screen bg-black h-screen z-1999 py-20 px-3">
+            <section className="w-screen bg-black h-screen z-1999 py-40 px-3">
                 <div className="grid grid-cols-2 w-full pl-10">
                     {/* text */}
                     <div className="text-white">
