@@ -63,22 +63,22 @@ export default function Hero() {
     // Lines for the p text
     const pLines = [
         "- Designing branding materials and advertising ",
-        "visuals, with a sharp focus on social media and YouTube ",
-        "thumbnails that actually convert"
+        "visuals, with a sharp focus on social media that",
+        "actually convert"
     ];
 
     // Lines for the h1 text (preserving spans)
     const h1Lines = [
         { content: "Design", className: "" },
-        { content: <><span className=''>That Grows </span></>, className: "" },
-        { content: <><span className="font-poly-neutral-wide-italic xl:text-[11rem] leading-0.5 text-neutral-200"><span>Audiences</span></span></>, className: "" }
+        { content: <><span className='font-poly-neutral'>That Grows </span></>, className: "" },
+        { content: <><span className="font-poly-neutral-wide-italic xl:text-[11rem] leading-0.5 text-neutral-300"><span>Audiences</span></span></>, className: "" }
     ];
 
     return (
         <section className="h-screen w-full select-none bg-black flex flex-col">
-            <div className="fixed inset-0 grid grid-cols-4 pointer-events-none">
-                {Array.from({ length: 4 }).map((_, i) => (
-                    <div key={i} className="border-l border-neutral-800/80"></div>
+            <div className="fixed inset-0 grid grid-cols-5 pointer-events-none">
+                {Array.from({ length: 5 }).map((_, i) => (
+                    <div key={i} className="border-l border-dashed border-neutral-800/80"></div>
                 ))}
             </div>
 
@@ -94,7 +94,7 @@ export default function Hero() {
                             <motion.span
                                 key={index}
                                 variants={lineVariants}
-                                className={index === 0 ? "block indent-11" : "block"} // Indent only the first line
+                                className={index === 0 ? "block indent-3" : "block"} // Indent only the first line
                             >
                                 {line}
                             </motion.span>
@@ -112,7 +112,7 @@ export default function Hero() {
                             <motion.span
                                 key={index}
                                 variants={lineVariants}
-                                className="block font-medium text-neutral-300" 
+                                className="block ml-5 font-poly-neutral text-neutral-300" 
                             >
                                 {line.content}
                             </motion.span>

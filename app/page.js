@@ -8,6 +8,8 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 import HeroLoader from "@/components/HeroLoader";
 import Nav from "../components/Navbar_var2"
 import Whoami from "../components/Whoami"
+import Work from "../components/Work"
+import BgReveal from "../components/BgReveal"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,15 +20,16 @@ export default function Home() {
 
   return (
     <>
-      <HeroLoader onComplete={handleLoadingComplete} />
-      {!isLoading && (
-        <>
-          <Nav />
-          <Hero />
-          <Whoami />
-          <ScrollIndicator />
-        </>
-      )}
+      {/* <HeroLoader onComplete={handleLoadingComplete} /> */}
+      {/* {!isLoading && ( */}
+      <>
+        <Nav />
+        <Hero />
+        <Whoami />
+        <Work />
+        <ScrollIndicator />
+      </>
+      {/* )} */}
     </>
   );
 }

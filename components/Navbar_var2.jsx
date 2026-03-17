@@ -81,14 +81,14 @@ export default function Navbar() {
                     <p>Zack A.</p>
                 </motion.div>
                 <motion.div
-                    className="flex flex-col text-left gap-0.5 mix-blend-difference text-white uppercase text-[0.65rem] w-[60%] overflow-hidden"
+                    className="flex flex-col text-left gap-0.5 mix-blend-difference text-white uppercase text-[0.65rem] w-[60%] overflow-hidden font-poly-neutral"
                 >
-                    <motion.a href="" className="text-neutral-300 w-fit hover:text-white" variants={linkVariants}>01/ hey</motion.a>
-                    <motion.a href="" className="text-neutral-300 w-fit hover:text-white" variants={linkVariants}>02/ whoami</motion.a>
-                    <motion.a href="" className="text-neutral-300 w-fit hover:text-white" variants={linkVariants}>03/ Works</motion.a>
+                    <motion.a href="" className="text-neutral-400 w-fit hover:text-white" variants={linkVariants}>01/ hey</motion.a>
+                    <motion.a href="" className="text-neutral-400 w-fit hover:text-white" variants={linkVariants}>02/ whoami</motion.a>
+                    <motion.a href="" className="text-neutral-400 w-fit hover:text-white" variants={linkVariants}>03/ Works</motion.a>
                 </motion.div>
 
-                <motion.div className="mix-blend-difference- font-poly cursor-pointer text-white text-xs w-[20%] text-right" variants={letsTalkVariants}>
+                <motion.div className="mix-blend-difference font-poly-neutral italic cursor-pointer text-white text-xs w-[20%] text-right" variants={letsTalkVariants}>
                     <p>Let's talk</p>
                 </motion.div>
             </motion.section>
