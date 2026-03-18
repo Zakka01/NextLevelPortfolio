@@ -8,10 +8,10 @@ export default function Section2() {
     const [hoveredSubtitle, setHoveredSubtitle] = useState("");
 
     const items = [
-        { src: "/assets/ParfPoster2.png", label: "SAILOR STATIC ", subtitle: "JEAN PAUL GAULTIER / PRINT ", w: "w-[22vw]", h: "h-[65vh]" },
-        { src: "/assets/juice.png", label: "VITAL RIOT", subtitle: "VITAMONT / BILLBOARD SET", w: "w-[30vw]", h: "h-[43vh]" },
-        { src: "/assets/5.png", label: "NOIR TEMPO", subtitle: "CHANEL / POSTER CAMPAIGN", w: "w-[30vw]", h: "h-[43vh]" },
-        { src: "/assets/4.png", label: "HEAVY GLOW", subtitle: "BIGBEAR / OUTDOOR SERIES", w: "w-[22vw]", h: "h-[65vh]" },
+        { src: "/assets/ParfPoster2.png", label: "SAILOR STATIC ", subtitle: "JEAN PAUL GAULTIER / PRINT ", w: "w-[25vw]", h: "h-[73vh]" },
+        { src: "/assets/juice.png", label: "VITAL RIOT", subtitle: "VITAMONT / BILLBOARD SET", w: "w-[40vw]", h: "h-[50vh]" },
+        { src: "/assets/5.png", label: "NOIR TEMPO", subtitle: "CHANEL / POSTER CAMPAIGN", w: "w-[40vw]", h: "h-[50vh]" },
+        { src: "/assets/4.png", label: "HEAVY GLOW", subtitle: "BIGBEAR / OUTDOOR SERIES", w: "w-[25vw]", h: "h-[73vh]" },
     ];
 
     return (
@@ -54,7 +54,7 @@ export default function Section2() {
 
             <div className="w-screen flex flex-col mt-20 gap-30">
                 {/* Row 1 */}
-                <div className="flex flex-row justify-between items-center px-30 gap-80">
+                <div className="flex flex-row justify-between items-center px-30 gap-40">
                     <div
                         className={`group ${items[0].w} ${items[0].h} bg-neutral-400 cursor-pointer relative overflow-hidden`}
                         onMouseEnter={() => {
@@ -95,7 +95,7 @@ export default function Section2() {
                 </div>
 
                 {/* Row 2 */}
-                <div className="flex flex-row justify-between items-end px-30 gap-80">
+                <div className="flex flex-row justify-between items-end px-30 gap-40">
                     <div
                         className={`group ${items[2].w} ${items[2].h} bg-neutral-400 cursor-pointer relative overflow-hidden`}
                         onMouseEnter={() => {

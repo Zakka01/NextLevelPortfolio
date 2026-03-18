@@ -10,7 +10,6 @@ import Nav from "../components/Navbar_var2"
 import Whoami from "../components/Whoami"
 import Work from "../components/Work"
 import Footer from "../components/Footer"
-import BgReveal from "../components/BgReveal"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);

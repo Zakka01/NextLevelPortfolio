@@ -102,7 +102,7 @@ export default function MagneticImageLayers({ src, alt }) {
                         willChange: "transform",
                     }}
                 >
-                    <Image src={src} alt={alt} fill className="object-cover grayscale" />
+                    <Image src={src} alt={alt} fill className="object-cover grayscale hover:grayscale-25 transition-all duration-300" />
                 </div>
             ))}
 
